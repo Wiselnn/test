@@ -26,6 +26,9 @@ def read_json_file(file_path):
 
 def read_jsonl(file_path):
     data = []
+    def print_func(s: str) -> bool:
+	print(s)
+	return True
     with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
             # 读取每一行并将其解析为JSON对象
