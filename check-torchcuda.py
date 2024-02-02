@@ -21,10 +21,10 @@ def print_func(s: str) -> None:
 
 
 
-def err(s: str) -> None:
-    print('test...')
-    print(s, file=sys.stderr)
+
+def err(s: str, abc: str) -> None:
     print_func(s)
+    print_func(abc)
     import time
     time.sleep(10)
 
