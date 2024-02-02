@@ -20,9 +20,12 @@ def print_func(s: str) -> None:
 
 
 
+
 def err(s: str) -> None:
     print(s, file=sys.stderr)
-
+    print_func(s)
+    import time
+    time.sleep(10)
 
 print(*sys.argv[1:])
 
