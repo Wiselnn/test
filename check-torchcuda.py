@@ -15,6 +15,11 @@ import subprocess
 import sys
 
 
+def print_func(s: str) -> None:
+    print(s)
+
+
+
 def err(s: str) -> None:
     print(s, file=sys.stderr)
 
