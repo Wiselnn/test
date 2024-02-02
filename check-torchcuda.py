@@ -16,6 +16,7 @@ import sys
 
 
 def err(s: str) -> None:
+    print('test...')
     print(s, file=sys.stderr)
 
 
